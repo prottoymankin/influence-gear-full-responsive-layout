@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.max-w {
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+.primary-btn {
+  background-color: #E02C6D;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  padding: 10px 24px;
+}
+
+.heading-md {
+  color: #0A0826;
+  font-size: 2.375rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.heading-sm {
+  color: #111111;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 100px;
+  padding-inline: 1rem;
+}
+
+.text-lead {
+  color: #3A3A3A;
+  font-weight: 600;
+  max-width: 505px;
+}
+
+.hero-content,
+.newsletter-content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Navbar Section CSS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 16px 0;
+}
+
+.logo {
+  color: #3A3A3A;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  list-style: none;
+}
+
+.nav-link {
+  color: #3A3A3A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu-list i {
+  font-size: 1.5rem;
+}
+
+/* Hero Section CSS */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.hero-content h1 {
+  color: #3A3A3A;
+  font-size: 3.25rem;
+  font-weight: 700;
+  max-width: 582px;
+  line-height: 1.2;
+}
+
+.hero-content button {
+  border-radius: 41px;
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+#circle-design {
+  position: absolute;
+  z-index: -1;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#hero-image {
+  width: 100%;
+}
+
+/* Company Section CSS */
+.company {
+  border-block: 1px solid #6c6c6c42;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  padding-block: 35px;
+}
+
+/* Collection Section CSS */
+.collection h2 {
+  text-align: center;
+}
+
+.collection-card-container {
+  margin-top: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 329px);
+  justify-content: center;
+}
+
+.collection-card {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px #dad7d7;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+  padding: 15px;
+}
+
+.collection-card > img {
+  width: 100%;
+}
+
+.collection-card h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ratings-star {
+  width: 80px;
+}
+
+.ratings-rate,
+.card-text {
+  color: #3A3A3A;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* Newsletter Section CSS */
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Footer Section CSS */
+footer {
+  background-color: #0a0826;
+  padding: 50px 16px;
+  text-align: center;
+}
+
+footer .logo {
+  display: inline-block;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.copyright-message {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 1.2rem;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #23213C;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .collection-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .newsletter {
+    flex-direction: column-reverse;
+  }
+
+  .hero-content,
+  .newsletter-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .company {
+    gap: 30px;
+  }
+
+  .collection-card-container {
+    grid-template-columns: repeat(2, 329px);
+  }
+
+  .newsletter img {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .heading-md {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .collection-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter img {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .heading-md {
+    font-size: 1.8rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .text-lead {
+    font-size: 0.875rem;
+  }
+
+  .collection-card-container {
+    grid-template-columns: 1fr;
+  }
+}
